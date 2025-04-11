@@ -1,13 +1,9 @@
 import React from "react";
-import { Button } from "antd";
+// import { Button } from "antd";
 import "./buttonGenre.css";
 
 function ButtonGenre() {
-  return (
-    <Button type="primary" id="but">
-      Action
-    </Button>
-  );
+  return <span id="but">Action</span>;
 }
 
 export default ButtonGenre;

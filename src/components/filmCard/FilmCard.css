@@ -30,3 +30,16 @@ li {
 #descMovie {
   font-size: 15px;
 }
+
+#movieDate {
+  color: #827e7e;
+}
+
+.ant-spin {
+  margin: 300px;
+  width: 100px;
+}
+
+.ant-alert {
+  width: 500px;
+}
