@@ -14,12 +14,15 @@
 }
 
 #root {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
 #generalContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -48,6 +51,22 @@ ul {
   display: flex;
   flex-wrap: wrap;
   width: 1010px;
+}
+
+#searchContainer {
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  margin: 15px;
+}
+
+.ant-tabs-nav-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-pagination {
+  flex-wrap: nowrap;
 }
 
 /* button {
