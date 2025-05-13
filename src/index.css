@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
 #root {
   display: flex;
   justify-content: center;
@@ -34,21 +42,14 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-ul {
+#movieList {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 1010px;
 }
@@ -66,27 +67,20 @@ ul {
 }
 
 .ant-pagination {
+  display: flex;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.ant-pagination-prev,
+.ant-pagination-item,
+.ant-pagination-next {
+  width: 100px;
 }
-button:hover {
-  border-color: #646cff;
+.ant-pagination-jump-next {
+  width: 98px;
+  margin-left: 0;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -98,5 +92,41 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  #generalContainer {
+    width: 100%;
+  }
+
+  #searchContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 767px;
+    margin: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .ant-pagination {
+    width: 100%;
+  }
+
+  #movieList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
   }
 }
