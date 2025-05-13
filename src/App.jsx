@@ -161,23 +161,23 @@ function MoviesApp() {
   return (
     <GenreContext.Provider value={genres}>
       <div id="generalContainer">
-        <Online>
-          <form id="searchContainer">
-            <Tabs
-              defaultActiveKey="Search"
-              items={items}
-              onChange={handleTabChange}
-            />
-          </form>
-          <Pagination
-            showSizeChanger={false}
-            total={totalPages}
-            onChange={onPaginationChange}
-            pageSize={10}
-            size="small"
-            style={{ width: "100vw", justifyContent: "center" }}
+        {/* <Online id="onlineSpan"> */}
+        <form id="searchContainer">
+          <Tabs
+            defaultActiveKey="Search"
+            items={items}
+            onChange={handleTabChange}
           />
-        </Online>
+        </form>
+        <Pagination
+          showSizeChanger={false}
+          total={totalPages}
+          onChange={onPaginationChange}
+          pageSize={10}
+          size="small"
+          style={{ width: "100vw", justifyContent: "center" }}
+        />
+        {/* </Online> */}
         <Offline>
           <Alert
             message="Отсутствует подключение к интернету"
