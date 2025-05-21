@@ -63,6 +63,7 @@ h1 {
   flex-direction: column;
   width: 100vw;
   margin: 15px;
+  align-items: center;
 }
 
 .ant-tabs-nav-wrap {
